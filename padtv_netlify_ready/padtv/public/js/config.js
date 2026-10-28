@@ -5,6 +5,6 @@
  * Keep it empty for local development (same-origin WebSocket).
  */
 window.PADTV_CONFIG = window.PADTV_CONFIG || {
-  websocketUrl: '',
+  websocketUrl: 'wss://pad-tv-1.onrender.com',
   siteUrl: ''
 };
