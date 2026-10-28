@@ -1,0 +1,26 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PadTV — Điện thoại thành tay cầm, TV thành sân chơi</title><link rel="stylesheet" href="/css/style.css"></head><body>
+<div class="wrap">
+<nav><div class="logo"><i>🎮</i>PadTV</div><a class="btn alt" href="/tv">Mở trên TV</a></nav>
+<header class="hero"><span class="tag">Không cần cài app · Không cần mua tay cầm</span>
+<h1>Biến <span class="g">TV</span> thành sân chơi,<br>điện thoại thành <span class="g">tay cầm</span></h1>
+<p class="mut lead">Hai người chơi cùng nhau trên màn hình lớn. Chỉ cần trình duyệt, một mã QR và hai chiếc điện thoại.</p></header>
+<section class="two">
+<div class="card"><h2>📺 Tôi đang ở trên TV</h2><p class="mut">Tạo phòng chơi, TV sẽ hiển thị mã phòng và mã QR cho hai người chơi.</p><a class="btn" href="/tv">Tạo phòng chơi</a></div>
+<form class="card" id="jf"><h2>📱 Tôi cầm điện thoại</h2><p class="mut">Nhập mã phòng đang hiển thị trên TV.</p>
+<div class="row"><input id="rc" inputmode="numeric" placeholder="GAME-4821" autocomplete="off"><button class="btn" style="margin:0">Tham gia</button></div></form>
+</section>
+<h2 class="sec">Cách hoạt động</h2>
+<section class="three">
+<div class="card"><div class="num">1</div><h2>Tạo phòng</h2><p class="mut">Mở PadTV trên TV và chọn Tạo phòng chơi. TV hiển thị mã phòng cùng mã QR.</p></div>
+<div class="card"><div class="num">2</div><h2>Quét QR</h2><p class="mut">Mỗi điện thoại quét QR hoặc nhập mã phòng, rồi chọn Người chơi 1 hoặc Người chơi 2.</p></div>
+<div class="card"><div class="num">3</div><h2>Chọn game &amp; chơi</h2><p class="mut">Chủ phòng chọn game và bấm Bắt đầu. Điện thoại biến thành tay cầm, TV hiển thị trò chơi.</p></div>
+</section>
+<h2 class="sec">Thư viện game</h2><section class="three" id="lib"></section>
+<footer>PadTV · Hoạt động trên cùng Wi-Fi hoặc qua Internet · Độ trễ hiển thị ngay trên tay cầm</footer>
+</div>
+<script src="/js/config.js"></script><script src="/js/games.js"></script>
+<script>
+document.getElementById('lib').innerHTML=GAMES.map(function(g){return'<div class="card lib'+(g.soon?' soon':'')+'"><div class="ic">'+g.icon+'</div><h2 style="margin-top:10px">'+g.name+'</h2><p class="mut" style="margin-bottom:12px">'+g.desc+'</p><span class="chip">'+(g.soon?'Sắp ra mắt':'2 người chơi')+'</span></div>'}).join('');
+document.getElementById('jf').onsubmit=function(e){e.preventDefault();var c=document.getElementById('rc').value.replace(/\D/g,'');if(c.length>=4)location.href='/c?room='+c};
+</script></body></html>

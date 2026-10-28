@@ -1,0 +1,16 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PadTV · Màn hình TV</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="tv">
+<main id="lobby" class="lobwrap">
+<header><div class="logo"><i>🎮</i>PadTV</div><span id="conn" class="pill">Đang kết nối…</span></header>
+<section class="lob">
+<div class="card join"><p class="mut">Quét mã QR hoặc mở trên điện thoại</p><b id="url" class="url">—</b>
+<img id="qr" alt="Mã QR tham gia phòng"><p class="mut">Mã phòng</p><div id="code" class="code">GAME-····</div></div>
+<div>
+<div id="s0" class="pl p1"><div class="av">P1</div><div><b>Người chơi 1</b><div class="st mut">Đang chờ kết nối…</div><small class="mt mut"></small></div></div>
+<div id="s1" class="pl p2"><div class="av">P2</div><div><b>Người chơi 2</b><div class="st mut">Đang chờ kết nối…</div><small class="mt mut"></small></div></div>
+<div class="card"><div class="mut">Trò chơi</div><div id="gname" class="gname"></div><p id="hint" class="mut"></p></div>
+</div></section></main>
+<canvas id="cv" width="1600" height="900" hidden></canvas>
+<div id="end" class="ov" hidden><div class="mut">KẾT THÚC TRẬN</div><div id="win" class="win"></div><div id="sc" class="scr"></div><p class="mut">Chủ phòng chọn Chơi lại hoặc Về phòng chờ trên điện thoại.</p></div>
+<script src="/js/config.js"></script><script src="/js/common.js"></script><script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script><script src="/js/games.js"></script><script src="/js/tv.js"></script></body></html>

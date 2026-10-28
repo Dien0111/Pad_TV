@@ -1,0 +1,24 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#070b16"><title>PadTV · Tay cầm</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="ctl">
+<div id="off" class="off" hidden>Mất kết nối — đang kết nối lại…</div>
+<section id="v-join" class="v"><div class="logo"><i>🎮</i>PadTV</div>
+<h1 class="h">Tham gia phòng</h1><p class="mut">Nhập mã phòng trên TV, rồi chọn vị trí của bạn.</p>
+<input id="code" inputmode="numeric" placeholder="GAME-4821" autocomplete="off"><p id="err" class="errt"></p>
+<div class="slots"><button class="slot p1" data-s="0">Người chơi 1</button><button class="slot p2" data-s="1">Người chơi 2</button></div></section>
+<section id="v-lobby" class="v" hidden><div class="logo"><i>🎮</i>PadTV</div>
+<div><span id="me" class="chip"></span> <span id="rc" class="mut"></span></div><div id="pp" class="pp"></div>
+<p id="tvw" class="errt" hidden>TV đang mất kết nối…</p>
+<div id="hostbox"><h2>Chọn game</h2><div id="games"></div><button id="go" class="btn wide">▶ Bắt đầu</button></div>
+<p id="wait" class="mut">Đang chờ chủ phòng chọn game và bắt đầu…</p></section>
+<section id="v-pad" hidden>
+<div class="top"><span id="pme" class="chip"></span><span>● <b id="png">--</b> ms</span><span id="bt"></span></div>
+<div class="deck"><div id="stick"><div id="knob"></div></div><div id="btns"></div></div>
+<div class="ov por"><div class="big-t">🔄</div><b>Xoay ngang điện thoại để chơi</b></div>
+<div id="nt" class="ov" hidden><b>TV đang mất kết nối…</b><span class="mut">Đang chờ TV kết nối lại</span></div></section>
+<section id="v-end" class="v" hidden><div class="logo"><i>🎮</i>PadTV</div>
+<div class="big-t" id="rt"></div><div class="big-t g" id="rs"></div>
+<div id="endhost"><button id="again" class="btn wide">↻ Chơi lại</button><button id="back" class="btn alt wide">Về phòng chờ</button></div>
+<p id="endwait" class="mut">Đang chờ chủ phòng chọn bước tiếp theo…</p></section>
+<script src="/js/config.js"></script><script src="/js/common.js"></script><script src="/js/games.js"></script><script src="/js/controller.js"></script></body></html>
